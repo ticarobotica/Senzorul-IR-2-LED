@@ -6,8 +6,8 @@ import test_rgb
 """
 7 - minus
 21 - plus
-68 - stanga
-64 - dreapta
+12  - adica tasta 1 - ledul albastru 
+24 - tasta 2 - ledul rosu 
 """
 
 pin_r=PWM(Pin(19, Pin.OUT))
@@ -80,4 +80,5 @@ def telecomanda(data, addr, ctrl):
         
 
 senzor_ir=NEC_16(pin_ir, telecomanda)
+
 
